@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Chat"
+             x:Class="Cedesistemas.App.Pages.ChatPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20" Spacing="10">
+                <Entry x:Name="NombreTxt"  Placeholder="Nombre"></Entry>
+                <Entry x:Name="MensajeTxt"  Placeholder="Mensaje"></Entry>
+                <Button x:Name="EnviarBtn" Text="Enviar" Clicked="EnviarBtn_Clicked"></Button>
+
+                <Label x:Name="ChatNombreTxt" ></Label>
+                <Label x:Name="ChatMensajeTxt" ></Label>
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
